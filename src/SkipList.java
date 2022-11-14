@@ -1,11 +1,14 @@
-import java.util.concurrent.ConcurrentSkipListMap;
+public interface SkipList {
 
-public interface MySkipList<K, V> {
+    public MySkipList.MySkipListEntry findEntry(String key);
+    public Integer get(String key);
 
-    public V get(K key);
+    public Integer put(String key, Integer value);
 
-    public void put(K key, V value);
+    public Integer remove(String key);
+    
+    public Integer getMaxValue();
 
-    public void remove(K key);
+    public Integer getValueOfMaxLevel();
 
 }
