@@ -7,7 +7,7 @@ public interface SkipList {
 
     public Integer remove(String key);
     
-    public Integer getMaxValue();
+    public Integer getValueOfMaxKey();
 
     public Integer getValueOfMaxLevel();
 
